@@ -6,7 +6,7 @@ You can run this example locally with Docker
 
 ```
 % docker build --load -t nginx-vod-module .
-% docker run -d --name vod -p 3030:80 -v $PWD/videos:/opt/static/videos -v $PWD/nginx.conf:/usr/local/nginx/conf/nginx.conf nginx-vod-module
+% docker run -d --name vod-server -p 3030:80 -v $PWD/videos:/opt/static/videos -v $PWD/nginx.conf:/usr/local/nginx/conf/nginx.conf nginx-vod-module
 ```
 
 then run the `index.html`.
