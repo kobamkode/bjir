@@ -1,0 +1,24 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+<link rel="stylesheet" href="./style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+<script src="https://unpkg.com/plyr@3"></script>
+<script src="./plyr-hls.js"></script>
+
+<body>
+	<div class="container">
+		<video controls crossorigin playsinline>
+			<source src="http://localhost:3030/hls/devito,360p.mp4,480p.mp4,720p.mp4,.en_US.vtt,.urlset/master.m3u8"
+				type="application/x-mpegURL" />
+		</video>
+	</div>
+
+	<track kind="captions" label="English captions" src="http://localhost:3030/hls/devito.en_US.vtt" srclang="en"
+		default />
+
+
+</body>
+
+</html>
